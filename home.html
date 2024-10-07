@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Balancing Diets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <!-- Welcome Message -->
+        <h1 id="welcomeMsg">Hi, User!</h1>
+
+        <!-- Notification and Settings Icons -->
+        <div class="header-extras">
+            <a href="#notifications" class="icon-link">
+                <img src="https://i.pinimg.com/564x/9f/c6/6e/9fc66e90e264c04a9b69b3b724fb6dc4.jpg" alt="Notifications" width="24" height="24">
+            </a>
+            <a href="#settings" class="icon-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Windows_Settings_icon.svg" alt="Settings" width="24" height="24">
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="faq.html">FAQ</a></li> <!-- Added FAQ -->
+            </ul>
+        </nav>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." id="searchInput">
+            <button type="submit" class="search-btn">🔍</button>
+        </div>
+
+       <!-- Welcome Dropdown -->
+<div class="user-dropdown">
+    <button class="dropdown-btn">User Menu ▼</button>
+    <div class="dropdown-content">
+        <a href="#profile">View Profile</a>
+        <a href="#settings">Settings</a>
+        <a href="signup.html" id="logoutLink">Logout</a> <!-- Updated Logout -->
+    </div>
+</div>
+
+    </header>
+
+
+    <main>
+       <!-- Hero Section -->
+<section class="hero">
+    <div class="video-background">
+        <video autoplay muted loop id="heroVideo">
+            <source src="path-to-your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img src="assets/video3.gif" alt="Background GIF" id="bg-gif"> <!-- Fallback GIF if video doesn't load -->
+    </div>
+
+    <div class="hero-content">
+        <h2>Your Health, Our Priority</h2>
+        <p>
+            At Balancing Diets, we understand that achieving health goals requires personalized attention and care. 
+            Our team of expert nutritionists is dedicated to creating tailored nutrition plans that suit your lifestyle. 
+            Whether you want to lose weight, build muscle, or simply eat healthier, we are here to help. 
+            Our holistic approach considers not just what you eat but also your overall well-being. 
+            We believe in empowering you with the knowledge and tools to make informed food choices. 
+            Join our supportive community and share your journey with others who are on a similar path. 
+            With regular progress tracking and adjustments, we ensure you stay on the right track.
+            <strong>Plus, enjoy free access to our mobile app for tracking your meals, workouts, and more!</strong> <!-- New feature -->
+        </p>
+        
+        <div class="hero-buttons">
+            <a href="#services" class="cta-button primary">Learn More</a>
+            <a href="#signup" class="cta-button secondary">Get Started</a> <!-- Added second CTA button -->
+        </div>
+    </div>
+</section>
+
+        
+
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Balancing Diets, we are dedicated to helping individuals achieve their best health by focusing on balanced, nutrient-rich diets. Our team of certified nutritionists and dietitians works with people from all walks of life to create personalized dietary solutions tailored to their unique needs.</p>
+            <p>We understand that every individual is different, which is why we take a holistic approach to nutrition. Our services are designed to address everything from weight management to addressing specific nutrient deficiencies, ensuring that you have the tools and knowledge you need to live a healthier life.</p>
+            <p>Our mission is to educate and empower our clients with sustainable dietary practices that fit seamlessly into their lifestyles. We use the latest research and technology to assess your health needs and offer scientifically-backed recommendations.</p>
+            <p>From meal planning to personalized coaching, we are here to support you in your journey towards better health. We also offer specialized programs for individuals with specific dietary restrictions, such as gluten-free, vegan, and ketogenic diets.</p>
+            <div class="about-content">
+                <img src="https://img.freepik.com/free-vector/diet-plan-schedule_3446-617.jpg" alt="Nutrition" class="about-img">
+                <p>Whether you're looking to lose weight, improve your energy levels, or simply eat better, Balancing Diets is your partner in health and wellness. Join us on this journey towards a healthier, happier you!</p>
+            </div>
+        </section>
+
+        <!-- Services Section with Cards -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://c8.alamy.com/comp/2G4127P/isometric-diet-programs-diet-plan-concept-nutrition-diet-weight-management-diet-individual-dietary-service-concept-healthy-eating-for-weight-2G4127P.jpg" alt="Diet Plan">
+                    <h3>Personalized Diet Plans</h3>
+                    <p>Our personalized diet plans are crafted to suit your specific lifestyle, dietary preferences, and health goals. Whether you're looking to lose weight, gain muscle, or simply maintain a balanced diet, we tailor every aspect of the plan to fit you.</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgfn-BTxGkbYaFKeXrDYWFG-TBW-KMBFh8Q&s" alt="Nutrition Coaching">
+                    <h3>Nutrition Coaching</h3>
+                    <p>Our nutrition coaching goes beyond basic diet advice – it’s about helping you build a lasting, positive relationship with food. We work with you one-on-one to set realistic, achievable goals and develop a plan that fits your unique needs.</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV8uncclFHMrpVRowAyO-qQ-fwY54IwGrCYw&s" alt="Nutrient Analysis">
+                    <h3>Nutrient Analysis</h3>
+                    <p>Our nutrient analysis service provides a detailed look at your diet to ensure you're getting the right balance of vitamins, minerals, and macronutrients. Using advanced tools, we analyze your current food intake and identify any gaps in your nutrition.</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.nutraingredients.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients.com/news/markets-and-trends/adm-talks-2021-trends-in-weight-management/12198261-3-eng-GB/ADM-talks-2021-trends-in-weight-management.jpg" alt="Weight Management">
+                    <h3>Weight Management Programs</h3>
+                    <p>Our weight management programs are designed to help you achieve your target weight in a healthy and sustainable way.</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKT-ANnef0AjgULYYFpQ6h_NLVwJCaKODQBQ&s" alt="Healthy Meal Prep Workshops">
+                    <h3>Healthy Meal Prep Workshops</h3>
+                    <p>Our healthy meal prep workshops teach you how to plan, prepare, and store nutritious meals for the week ahead.</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcZqxKtFFiGPnN1AGDZaM2zEriV4EqvG8OP5JMmcA9l5gprv7xGBHECdb7606NYIimUp4&usqp=CAU" alt="Fitness and Nutrition Integration">
+                    <h3>Fitness and Nutrition Integration</h3>
+                    <p>Our fitness and nutrition integration service combines the power of proper diet with a personalized exercise plan to help you achieve overall wellness.</p>
+                </div>
+            </div>
+        </section>
+
+       <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, feel free to reach out to us via email or visit us at our office. We’re here to help you achieve your health goals!</p>
+    
+    <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>Email: <a href="mailto:support@balancingdiets.com">support@balancingdiets.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        <p>Location: 123 Nutrition Street, Healthy City, HC 45678</p>
+    </div>
+
+    <h3>Contact Form</h3>
+<form action="#" method="post" class="contact-form">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+    </div>
+    <button type="submit" class="cta-button">Send Message</button>
+</form>
+
+<p>Follow us on social media for updates and nutrition tips!</p>
+<div class="social-media">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+</div>
+
+<h3>Our Location</h3>
+<!-- Embed Google Maps -->
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55397.42891027308!2d80.58304129146987!3d16.475052021589853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0a2a7d81943%3A0x8ba5d78f65df94b8!2sK%20L%20E%20F%20Deemed%20To%20Be%20University!5e1!3m2!1sen!2sin!4v1727928220072!5m2!1sen!2sin" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+     <!-- Profile Section -->
+<section id="profile">
+    <h2>Your Profile</h2>
+
+    <!-- Profile Picture -->
+<div class="profile-picture">
+    <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" alt="Profile Picture" id="profilePicture" width="150" height="150" style="border-radius: 50%;">
+</div>
+
+<p>Welcome back, <span id="profileName">User</span>!</p>
+
+<p>Take control of your health with your personalized dashboard. Here, you can view your dietary plans, track your progress, and access resources tailored to your health goals. Stay on top of your fitness with detailed exercise recommendations, track your hydration and calorie intake, and receive daily health tips to keep you motivated. You can also set reminders for meals, workouts, and health check-ins, ensuring you never miss a step on your wellness journey. Whether you're focused on weight loss, muscle gain, or overall health improvement, your dashboard adapts to your evolving needs and goals.</p>
+
+<div class="profile-summary">
+    <h3>Your Progress Summary</h3>
+    <p>🌟 You've successfully completed <span id="completedTasks">10</span> tasks this week!</p>
+    <p>✅ Your weight loss goal: <span id="weightLossGoal">5 lbs</span> this month.</p>
+    <p>📅 Next check-in: <span id="nextCheckIn">October 10, 2024</span>.</p>
+</div>
+
+<h3>Quick Links</h3>
+<ul class="quick-links">
+    <li><a href="#dietPlan">View Your Diet Plan</a></li>
+    <li><a href="#progressTracking">Track Your Progress</a></li>
+    <li><a href="#resources">Access Resources</a></li>
+    <li><a href="signup.html" id="logoutLink">Logout</a></li>
+</ul>
+
+<div class="motivational-quote">
+    <p>"Every healthy choice you make is a step toward a healthier you!"</p>
+</div>
+
+<!-- New Features Section -->
+<div class="additional-features">
+    <h3>New Features</h3>
+
+    <!-- Recent Activity -->
+    <div class="recent-activity">
+        <h4>Recent Activity</h4>
+        <p>📝 Last meal logged: <span id="lastMeal">Grilled Chicken Salad</span> on <span id="lastMealDate">October 1, 2024</span>.</p>
+        <p>🏋️‍♀️ Last workout: <span id="lastWorkout">30-minute cardio session</span> on <span id="lastWorkoutDate">October 2, 2024</span>.</p>
+    </div>
+
+    <!-- Achievements Section -->
+    <div class="achievements">
+        <h4>Your Achievements</h4>
+        <ul>
+            <li>🎖 Earned the "Consistency King" badge for tracking meals daily for 30 days!</li>
+            <li>🎖 Reached your step goal 10 days in a row!</li>
+        </ul>
+    </div>
+
+    <!-- Health Insights -->
+    <div class="health-insights">
+        <h4>Health Insights</h4>
+        <p>💡 Based on your recent activities, you might want to increase your protein intake to support muscle recovery.</p>
+    </div>
+</div>
+
+<div class="profile-actions">
+    <h3>Manage Your Profile</h3>
+    <button class="cta-button">Edit Profile</button>
+    <button class="cta-button">Change Password</button>
+    <button class="cta-button">Update Profile Picture</button> <!-- Added new button for profile picture -->
+</div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Balancing Diets. All rights reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+</footer>

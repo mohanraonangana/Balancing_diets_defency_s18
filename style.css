@@ -1,0 +1,490 @@
+/* Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Updated to Roboto */
+    background-color: #e0f7fa;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff7043;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for nav links */
+}
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    color: #fff; /* White text for better contrast on darker backgrounds */
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video, #bg-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    filter: brightness(60%); /* Darkened background to enhance bright text */
+    transition: filter 1s ease-in-out;
+}
+
+.hero:hover .video-background video,
+.hero:hover #bg-gif {
+    filter: brightness(70%);
+}
+
+/* Hero Content Styling */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideUp 1.5s ease-out;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Bright Tomato color */
+    opacity: 0;
+    animation: fadeInText 2s 0.5s forwards;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black; /* Bright Yellow color */
+    opacity: 0;
+    animation: fadeInText 2s 1s forwards;
+}
+
+/* Call-to-Action Buttons */
+.hero-buttons {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInText 2s 1.5s forwards;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: translateY(0);
+    color: #fff;
+}
+
+/* Hover effects for buttons */
+.cta-button.primary {
+    background-color: #ff4500; /* Bright Orange-Red */
+}
+
+.cta-button.primary:hover {
+    background-color: #e03a00;
+    transform: translateY(-5px);
+}
+
+.cta-button.secondary {
+    background-color: #00e676; /* Bright Green */
+}
+
+.cta-button.secondary:hover {
+    background-color: #00c864;
+    transform: translateY(-5px);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* About Us Section */
+#about {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif; /* Playfair for section titles */
+    color: #333;
+}
+
+#about p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+}
+
+/* Services Section with Cards */
+#services {
+    padding: 40px 20px;
+    background-color: #f1f8e9;
+}
+
+#services h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Adjust width and gap */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif; /* Playfair for card titles */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact h3 {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #ff7043; /* Highlight color for subheadings */
+    margin: 20px 0 10px; /* Spacing around subheadings */
+}
+
+.contact-info p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    margin: 5px 0; /* Spacing between contact details */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-form div {
+    margin-bottom: 15px; /* Spacing between form elements */
+    width: 100%;
+    max-width: 400px; /* Limiting form width for better look */
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    display: block; /* Makes the label take the full line */
+    margin-bottom: 5px; /* Spacing below the label */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding inside the inputs */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    color: black;
+}
+
+.contact-form button {
+    margin-top: 10px; /* Spacing above the button */
+    color: black;
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 20px; /* Spacing above social media section */
+}
+
+.social-media a {
+    margin: 0 10px; /* Spacing between links */
+    text-decoration: none;
+    color: #ff7043; /* Matching link color */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover for better interactivity */
+}
+
+
+/* Profile Section Styles */
+#profile {
+    padding: 40px 20px;
+    background-color: #f1f8e9; /* Light green background for profile section */
+    text-align: center;
+}
+
+#profile h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#profile h3 {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #ff7043; /* Highlight color for subheadings */
+    margin: 20px 0 10px; /* Spacing around subheadings */
+}
+
+.profile-summary {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px 0; /* Margin around the summary box */
+}
+
+.profile-summary p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.quick-links li {
+    margin: 10px 0; /* Spacing between links */
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #ff7043; /* Link color */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.quick-links a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+.motivational-quote {
+    font-style: italic;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.profile-actions {
+    margin-top: 20px;
+}
+
+.profile-actions button {
+    margin: 5px; /* Spacing between buttons */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    #profile h2 {
+        font-size: 1.8rem;
+    }
+
+    #profile h3 {
+        font-size: 1.3rem;
+    }
+
+    .profile-summary {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+
+    .motivational-quote {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #ff7043;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}
+/* Dropdown Container */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button Styling */
+.dropdown-btn {
+    background-color: orangered;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown when the button is hovered over */
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change button background color on hover */
+.user-dropdown:hover .dropdown-btn {
+    background-color: #2980b9;
+}
+
